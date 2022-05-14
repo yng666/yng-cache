@@ -1,0 +1,32 @@
+{
+    "name": "yng/cache",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": [
+        "cache",
+        "yngphp"
+    ],
+    "homepage": "https://www.chinaqe.cn",
+    "description": "A cache component based on PSR16 specification which supports File,Redis,Memcached and APC.",
+    "authors": [
+        {
+            "name": "yng"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yng\\Cache\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "psr/simple-cache": "^1.0"
+    },
+    "extra": {
+        "yng": {
+            "config": {
+                "cache": "publish/cache.php"
+            }
+        }
+    }
+}
